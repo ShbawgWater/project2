@@ -6,6 +6,7 @@
         <?php
         /* write loop to generate list items as follows: 
             <li class='navigation__list-item'><a href='index.php'>Home</a></li> */
+            //Brandon Ho
 
             foreach ($links as $link) {
                 echo "<li class='navigation__list-item'><a href=' " . $link['url'] . "'>" .$link['label'] . "</a></li>";
