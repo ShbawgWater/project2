@@ -3,15 +3,17 @@
 include 'data.inc.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    echo "<p>Error: This page must be accessed by submitting the form.</p>";
-    echo "<a href='ch12-proj21.php'>Return to form</a>";
+    echo "No Form Data... ";
+    echo "<a href=\"ch12-proj2.php\">go to form</a>";
+    echo " and enter data.";
     exit;
 }
 $title = trim($_POST['title']);
 
 if ($title === '') {
-    echo "<p>Error: Title is required.</p>";
-    echo "<a href='ch12-proj21.php'>Return to form</a>";
+    echo "No Title...";
+    echo "<a href=\"ch12-proj2.php\">go to form</a>";
+    echo " and enter data.";
     exit;
 }
 
